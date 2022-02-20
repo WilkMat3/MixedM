@@ -7,7 +7,7 @@ console.log(`${input}`)
 
 // This is the random num function, it generates and console logs a random number between 0 - 1000
 
-let genRandomnum = () =>{
+let genRandomNum = () =>{
     num = Math.floor(Math.random() * 1001);
     console.log(num)
   };
@@ -39,13 +39,13 @@ let gen = () =>{
 // compares it to the below values, if it matches it will call the associated function.
 
 switch (input) {
-    case '1': genRandomnum();
+    case '1': genRandomNum();
     break;
     case '2': run();
     break;
     case '3': gen();
     break;
-    case '4': word();
+    case '4': words();
     break;
     default: console.log('Error: Invalid input!')
 };
