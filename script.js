@@ -5,8 +5,7 @@ const prompt = ps();
 let input = prompt("Type here: ")
 console.log(`${input}`)
 
-// This is the random word function, it generates a random number which then console logs the associated variable.
-
+// This is the random num function, it generates and console logs a random number between 0 - 1000
 
 let genRandomnum = () =>{
     num = Math.floor(Math.random() * 1001);
@@ -19,7 +18,6 @@ let second = "Chinese proverb: It's better to be without a book than to believe 
 let third = "Chinese proverb: A little impatience will spoil great plans."
 let fourth = "A journey of a thousand miles begins with a single step."
 let fifth = "Be not afraid of growing slowly, be afraid only of standing still."
-
 
 let gen = () =>{
     num = Math.floor(Math.random() * 5);
