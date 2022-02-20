@@ -7,26 +7,10 @@ console.log(`${input}`)
 
 // This is the random word function, it generates a random number which then console logs the associated variable.
 
-let A = "Football"
-let b = "Pray"
-let c = "Jump"
-let d = "Happy"
-let e = "Grind"
 
-let genRandomWord = () =>{
-    word = Math.floor(Math.random() * 5);
-    switch (word) {
-        case 0: console.log(A);
-        break;
-        case 1: console.log(b);
-        break;
-        case 2: console.log(c);
-        break;
-        case 3: console.log(d);
-        break;
-        case 4: console.log(e);
-        break;
-    }
+let genRandomnum = () =>{
+    num = Math.floor(Math.random() * 1001);
+    console.log(num)
   };
 
 // The Chinese proverb function, it generates a random number which then console logs the associated variable. 
@@ -57,11 +41,13 @@ let gen = () =>{
 // compares it to the below values, if it matches it will call the associated function.
 
 switch (input) {
-    case '1': genRandomWord();
+    case '1': genRandomnum();
     break;
     case '2': run();
     break;
     case '3': gen();
+    break;
+    case '4': word();
     break;
     default: console.log('Error: Invalid input!')
 };
