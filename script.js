@@ -63,9 +63,5 @@ switch (input) {
     break;
     case '3': gen();
     break;
-    case '4': theMessage('Hi again!');
-    break;
-    case '5': theMessage('See you.');
-    break;
     default: console.log('Error: Invalid input!')
 };
