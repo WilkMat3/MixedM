@@ -5,11 +5,31 @@ const prompt = ps();
 let input = prompt("Type here: ")
 console.log(`${input}`)
 
-// This is the universial function used to call
+// This is the random word function, it generates a random number which then console logs the associated variable.
 
-const theMessage = param => console.log(param);
+let A = "Football"
+let b = "Pray"
+let c = "Jump"
+let d = "Happy"
+let e = "Grind"
 
-// The Chinese proverb function 
+let genRandomWord = () =>{
+    word = Math.floor(Math.random() * 5);
+    switch (word) {
+        case 0: console.log(A);
+        break;
+        case 1: console.log(b);
+        break;
+        case 2: console.log(c);
+        break;
+        case 3: console.log(d);
+        break;
+        case 4: console.log(e);
+        break;
+    }
+  };
+
+// The Chinese proverb function, it generates a random number which then console logs the associated variable. 
 let first = "Chinese proverb: A crisis is an opportunity riding the dangerous wind."
 let second = "Chinese proverb: It's better to be without a book than to believe a book entirely."
 let third = "Chinese proverb: A little impatience will spoil great plans."
@@ -33,18 +53,19 @@ let gen = () =>{
     }
   };
 
-// This is the switch statement that will check the user input to the response.
+// This is the switch statement that will check the user input to the response. It checks the users input and
+// compares it to the below values, if it matches it will call the associated function.
 
 switch (input) {
-    case '1': theMessage('Random word!');
+    case '1': genRandomWord();
     break;
     case '2': run();
     break;
     case '3': gen();
     break;
-    case '2': theMessage('Hi again!');
+    case '4': theMessage('Hi again!');
     break;
-    case '2': theMessage('See you.');
+    case '5': theMessage('See you.');
     break;
     default: console.log('Error: Invalid input!')
 };
