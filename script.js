@@ -19,7 +19,7 @@ let third = "Chinese proverb: A little impatience will spoil great plans."
 let fourth = "A journey of a thousand miles begins with a single step."
 let fifth = "Be not afraid of growing slowly, be afraid only of standing still."
 
-let gen = () =>{
+let chinese = () =>{
     num = Math.floor(Math.random() * 5);
     switch (num) {
         case 0: console.log(first);
@@ -43,7 +43,7 @@ switch (input) {
     break;
     case '2': run();
     break;
-    case '3': gen();
+    case '3': chinese();
     break;
     case '4': words();
     break;
